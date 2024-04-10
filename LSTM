@@ -1,0 +1,62 @@
+## Introduction
+Hello, my name is Braedon and I am a senior with a Math/Stats major. Today I will 
+be talking about LSTM in hopes of providing a better understanding of what it is 
+and the uses for it. Quick reminder, a neural network is a machine learning 
+program, or model, that makes decisions in a manner similar to the human brain, 
+by using processes that mimic the way biological neurons work together to 
+identify phenomena, weigh options and arrive at conclusions. 
+
+### What is LSTM?
+Long Short-Term Memory (LSTM) is a powerful structure within the realm of neural 
+networks, particularly recurrent neural networks (RNNs). It excels in handling 
+sequential data such as time series, text, audio, and more. In the following 
+paragraphs, we'll delve into the workings of LSTM networks, their architecture, 
+and their applications.
+
+LSTM is a variant of RNN designed to overcome the limitations of traditional RNNs 
+in capturing long-range dependencies in sequential data. It was introduced by 
+Hochreiter and Schmidhuber in 1997. LSTM networks are composed of memory cells 
+that maintain states over time, allowing them to remember information for long 
+durations.
+
+The LSTM uses what it previously knows to help make it understand what it is 
+currently looking at, or help it to predict what might come next. If we compared 
+it to a human brain then it is like when you are being read a story, you take 
+mental notes of what is important and discard the rest as the story progresses. 
+This allows you to effectively recall important details and once given enough 
+information, you can then try to predict the story's ending.
+
+### Key Ideas
+Forget Gate: Decides what information to discard from the cell state.
+Input Gate: Determines which new information to incorporate into the cell state.
+Cell State: Represents the memory of the LSTM cell.
+Output Gate: Controls the information to be output based on the cell state.
+These gates are controlled by activation functions (usually sigmoid and tanh) 
+that regulate the flow of information.
+
+
+
+### Applications
+Time Series Prediction: LSTM networks are widely used in financial forecasting, 
+stock market prediction, weather forecasting, and other domains where data is 
+time-dependent.
+Natural Language Processing (NLP): LSTM is highly effective in tasks such as 
+language translation, sentiment analysis, text generation, and speech recognition.
+Gesture Recognition: In fields like computer vision, LSTM networks can be used 
+for gesture recognition in sign language or human-computer interaction.
+Healthcare: LSTMs find applications in analyzing medical data such as patient 
+records, electrocardiograms (ECG), and monitoring vital signs.
+
+### Example
+Let's consider the example of predicting rodent reports using LSTM. Suppose we 
+use the rodent data provided in the github. If we use the previous months to 
+train the LSTM model then we can train an LSTM network on this data to learn 
+patterns and relationships. The network takes in a sequence of past rodent sighting reports as input and predicts the future rodent sightings.
+
+
+
+use time series to predict the number of rodent reports in the next month/year etc 
+
+### References
+https://machinelearningmastery.com/lstm-for-time-series-prediction-in-pytorch/#:~:text=Long%20Short%2DTerm%20Memory%20(LSTM,series%20or%20string%20of%20text.
+
